@@ -12,7 +12,7 @@ class Calculator1:
         
         calc_result = first_process_result + second_process_result + splited_number
 
-        response =  self.__format_response(calc_result)
+        response = self.__format_response(calc_result)
         return response
 
 
