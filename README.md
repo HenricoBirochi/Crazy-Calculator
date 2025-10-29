@@ -54,6 +54,32 @@ python run.py
 
 If the project boots a Flask app from `src/main/server/server.py`, you can open that file to see the exact run command or configuration (host/port). Adjust as needed.
 
+## Docker / Docker Compose 🐳
+
+This repository now includes a `docker-compose.yml` file that allows you to run the application in containers using Docker Compose.
+
+Basic instructions (with Docker Desktop running):
+
+```cmd
+docker compose up --build -d
+```
+
+- View logs:
+
+```cmd
+docker compose logs -f
+```
+
+- Stop and remove containers/networks created by Compose:
+
+```cmd
+docker compose down
+```
+
+If you're using the older Compose v1, replace `docker compose` with `docker-compose` in the commands above.
+
+If you prefer to run the application locally without Docker, follow the "Quick start" section above.
+
 ## Running tests 🧪
 
 If `pytest` is available (it may already be in `requirements.txt`), run the test suite with:
